@@ -1,42 +1,47 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import tasktracker from "../assets/portfolio/tasktracker.png";
+import youtube from "../assets/portfolio/youtube.png";
+import blog from "../assets/portfolio/blog.png";
+import chat from "../assets/portfolio/chat.png";
+import ecommerce from "../assets/portfolio/ecommerce.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      githubLink: "https://github.com/example/arrayDestruct",
+      src: tasktracker,
+      githubLink: "https://github.com/0Rohit2022/TaskTracker_Frontend",
+      projectName: "TaskTracker",
     },
     {
       id: 2,
-      src: reactParallax,
-      githubLink: "https://github.com/example/reactParallax",
+      src: youtube,
+      githubLink: "https://github.com/0Rohit2022/TubeTweets",
+      projectName: "TubeTweets",
     },
     {
       id: 3,
-      src: navbar,
-      githubLink: "https://github.com/example/navbar",
+      src: tasktracker,
+      githubLink: "https://github.com/0Rohit2022/Resume-Builder",
+      projectName: "CVForge",
     },
     {
       id: 4,
-      src: reactSmooth,
-      githubLink: "https://github.com/example/reactSmooth",
+      src: blog,
+      githubLink: "https://github.com/0Rohit2022/Thought-stream",
+      projectName: "IdeaJET",
     },
     {
       id: 5,
-      src: installNode,
-      githubLink: "https://github.com/example/installNode",
+      src: chat,
+      githubLink: "https://github.com/0Rohit2022/ChatZone",
+      projectName: "ChatZone",
     },
     {
       id: 6,
-      src: reactWeather,
-      githubLink: "https://github.com/example/reactWeather",
+      src: ecommerce,
+      githubLink: "https://github.com/0Rohit2022/Ecommerce",
+      projectName: "Ecommerce",
     },
   ];
 
@@ -47,32 +52,37 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-center">
             Portfolio
           </p>
-          <p className="py-8">Check out some of my work here</p>
+          <p className="py-8 text-center">
+            Explore a selection of my projects showcased here
+          </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, githubLink }) => (
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 sm:px-0">
+          {portfolios.map(({ id, src, githubLink, projectName }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
-                className="rounded-md duration-200 hover:scale-105"
+                alt={projectName}
+                className="rounded-md duration-200 hover:scale-105 w-full"
               />
-              <div className="flex items-center justify-center ">
+              <div className="flex justify-center mt-4">
                 <a
                   href={githubLink}
-                  className="hover:font-bold hover:text-[16px]"
+                  className="hover:font-bold hover:text-xl"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="w-1/2 px-6 py-3 m-4 rounded-lg">
-                    Demo
+                    {projectName}
                   </button>
                 </a>
                 <a
                   href={githubLink}
-                  className="hover:font-bold hover:text-[16px]"
+                  className="hover:font-bold hover:text-xl"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="w-1/2 px-6 py-3 m-4 rounded-lg">
                     Code
@@ -83,7 +93,6 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-     
     </div>
   );
 };

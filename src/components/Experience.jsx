@@ -44,7 +44,7 @@ const Experience = () => {
       id: 5,
       src: nodejs,
       title: "Node JS",
-      style: "shadow-white",
+      style: "shadow-green-500",
     },
     {
       id: 6,
@@ -56,7 +56,7 @@ const Experience = () => {
       id: 7,
       src: expressjs,
       title: "Express JS",
-      style: "shadow-pink-400",
+      style: "shadow-gray-700",
     },
     {
       id: 8,
@@ -74,25 +74,25 @@ const Experience = () => {
       id: 10,
       src: java,
       title: "Java",
-      style: "shadow-gray-400",
+      style: "shadow-red-400",
     },
     {
       id: 11,
       src: MySQL,
       title: "MySQL",
-      style: "shadow-gray-400",
+      style: "shadow-blue-400",
     },
     {
       id: 12,
       src: mongodb,
       title: "MongoDB",
-      style: "shadow-gray-400",
+      style: "shadow-green-400",
     },
     {
       id: 13,
       src: spring_boot,
       title: "Spring Boot",
-      style: "shadow-gray-400",
+      style: "shadow-green-400",
     },
   ];
 
@@ -104,7 +104,7 @@ const Experience = () => {
             <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
               Experience
             </p>
-            <p className="py-6">These are the technologies I've worked with</p>
+            <p className="py-6">These are the technologies I've proficiently utilized</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 px-4 lg:px-0">

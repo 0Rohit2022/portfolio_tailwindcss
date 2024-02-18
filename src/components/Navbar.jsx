@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { LuCode2 } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
   const [color, setColor] = useState("#000000");
   function generateRandomColor() {
     return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -40,6 +41,11 @@ const Navbar = () => {
       links: "contact",
     },
   ];
+
+  const closeHamburger = () => {
+    setHamBurger(false);
+  };
+
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4 ">
       <div className="flex">
@@ -65,7 +71,9 @@ const Navbar = () => {
             className="px-4 cursor-pointer capitalize font-medium text-gray-400
             hover:scale-105 hover:text-white duration-200"
           >
-           <Link to={links} smooth duration={500}>{links}</Link>
+            <Link to={links} smooth duration={500}>
+              {links}
+            </Link>
           </li>
         ))}
       </ul>
@@ -84,7 +92,17 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6  text-4xl hover:scale-105 hover:text-white duration-200"
             >
-              {links}
+              <Link
+                onClick={() => {
+                  setNav(!nav);
+                  closeHamburger();
+                }}
+                to={links}
+                smooth
+                duration={500}
+              >
+                {links}
+              </Link>
             </li>
           ))}
         </ul>

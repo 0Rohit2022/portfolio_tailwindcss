@@ -12,20 +12,21 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          qui fugit numquam! Cum vitae temporibus molestiae dicta illum
-          laboriosam similique at mollitia nihil iusto repellat numquam
-        </p>
+        
 
         <br />
 
         <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          qui fugit numquam! Cum vitae temporibus molestiae dicta illum
-          laboriosam similique at mollitia nihil iusto repellat numquam eos illo
-          perspiciatis 
+          Passionate FullStack Web Developer Rohit, based in Ahmedabad, brings
+          over a year of hands-on project development experience. With an
+          entrepreneurial mindset and guided by influential mentors like Hitesh
+          Choudhary, I excel in crafting compelling online brands. Committed to
+          continuous learning and delivering top-notch web applications, I adapt
+          seamlessly to diverse work environments, ensuring unparalleled
+          results.
         </p>
+       
+        
       </div>
     </div>
   );
