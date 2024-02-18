@@ -12,7 +12,7 @@ const SocialLinks = () => {
              LinkedIn <FaLinkedin size={30} />
            </>
          ),
-         href: "https://linkedin.com",
+         href: "https://in.linkedin.com/in/rohit-kumar-a56085237",
          style: "rounded-tr-md",
        },
        {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
              GitHub <FaGithub size={30} />
            </>
          ),
-         href: "https://github.com/",
+         href: "https://github.com/0Rohit2022",
        },
        {
          id: 3,
@@ -41,7 +41,7 @@ const SocialLinks = () => {
            </>
          ),
          style: "rounded-br-md",
-         href: "/resume.pdf",
+         href: "./Rohit_resume.pdf",
          download: true,
        },
      ];

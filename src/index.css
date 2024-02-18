@@ -11,3 +11,35 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  color: #374151;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+  cursor: pointer;
+}
+
