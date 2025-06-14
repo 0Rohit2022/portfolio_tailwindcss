@@ -1,32 +1,54 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_o57ncee", "template_d5gb5z7", form.current, {
-        publicKey: "ZQEoyzs4PFJWK-gKR",
-      })
-      .then(() => {
-        console.log("Success");
-        toast.success("Email Sent");
-        setDone(true);
 
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
-      })
-      .catch((error) => {
-        toast.error(error);
+    const formData = new FormData(form.current);
+    const name = formData.get("user_name");
+    const email = formData.get("user_email");
+    const message = formData.get("message");
+
+    const payload = {
+      to: ["rohit.k@t-a-g.co"], // Static recipient
+      subject: `Message from ${name}`,
+      body: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br/>${message}</p>
+      `,
+      isBodyHtml: true,
+    };
+
+    try {
+      const response = await fetch("http://localhost:3002/Email/Send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       });
-  };
 
+      if (!response.ok) {
+        throw new Error("Failed to send email.");
+      }
+
+      toast.success("Email Sent Successfully");
+      setDone(true);
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    } catch (err) {
+      toast.error("Failed to send message");
+      console.error(err);
+    }
+  };
   return (
     <div
       name="contact"
