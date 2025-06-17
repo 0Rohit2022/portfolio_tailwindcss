@@ -13,20 +13,28 @@ const experiences = [
     tip: "Currently Working Here",
     startDate: "Apr 2024",
     endDate: "Present",
-    location: "Remote, India",
+    location: "Bangalore,Karnataka India",
     description: [
-      "Developed secure REST APIs using ADO.NET, SQL Server & JWT.",
-      "Integrated Microsoft Graph API for Entra ID and license management.",
-      "Built reusable Blazor components integrated with APIs.",
-      "Improved API performance by 80% using LINQ and parallel processing.",
+      "Management System: Built a web application to manage institutional data, including students, teachers, and administrators, with features like event scheduling, user registration etc.",
+      "Optimized API Performance: Reduced response times from 10–30s to 3–4s using LINQ and parallel processing for bulk operations.",
+      "Microservices Architecture: Developed REST APIs by  modularizing  service-level  APIs  and  consolidating  logic  in  an API Gateway using ADO.NET and MS SQL Stored procedures and JWT for secure API access",
+      "Blazor Development: Created reusable Blazor components and integrated Web APIs in Blazor WebAssembly.",
+      "Graph API Implementation: Built an API with Microsoft Graph API for user creation and license assignment via SKUID, integrating with domain management",
+      "Collaborative API Development and Integration: Collaborated with another company to build and integrate APIs, ensuring seamless interaction between systems.",
+      "Admin Panel Development: Developed specialized admin interfaces for data verification and compliance across multiple platforms.",
+      "Deployment : Deployed  APIs on  Azure  services and  virtual  machines , ensuring scalability and reliability. ",
     ],
     tech: [
       "ADO.NET",
       "SQL Server",
+      "ASP.NET",
+      "ASP.NET CORE",
       "JWT",
       "Blazor",
       "LINQ",
       "Microsoft Graph API",
+      "Azure",
+      "VM",
     ],
   },
   {
@@ -36,45 +44,61 @@ const experiences = [
     tip: "Built Portfolio Site",
     startDate: "Jun 2023",
     endDate: "Dec 2023",
-    location: "Ahmedabad, India",
+    location: "Ahmedabad, Gujarat India",
     description: [
       "Built responsive React UIs with reusable components.",
       "Developed portfolio website showcasing projects and routing.",
     ],
-    tech: ["React", "JavaScript", "Tailwind CSS"],
+    tech: ["React", "JavaScript", "HTML", "Tailwind CSS", "API"],
   },
   {
     id: 3,
     title: "Java Developer Intern",
     company: "PSA",
-    tip: "First Backend Project",
+    tip: "Second Backend Project",
     startDate: "Dec 2022",
     endDate: "May 2023",
-    location: "Remote, India",
+    location: "Bangalore, Karnataka India",
     description: [
-      "Built blog platform using Spring Boot, Hibernate, MySQL, and JWT.",
-      "Implemented role-based access and secured REST APIs.",
+      "Built and enhanced a blog platform with features like JWT-based authentication, role management, and pagination.",
+      "Developed REST APIs using Java, Spring Boot, Hibernate, and MySQL, ensuring seamless integration and optimized performance. ",
+      "Optimized REST APIs for seamless integration and performance.",
     ],
-    tech: ["Spring Boot", "Hibernate", "MySQL", "JWT", "Java"],
+    tech: [
+      "Spring Boot",
+      "Hibernate",
+      "MySQL",
+      "JWT",
+      "Java",
+      "Spring Security",
+      "JDBC",
+    ],
+  },
+  {
+    id: 4,
+    title: "NodeJS Developer Intern",
+    company: "Akash Technolabs",
+    tip: "First Backend Project",
+    startDate: "Jan 2022",
+    endDate: "May 2022",
+    location: "Ahmedabad, Gujarat India",
+    description: [
+      "Collaborated in an 8-member team to develop a College Management System with Node.js and Express.js, following the MVC architecture.",
+      "Built REST APIs for key modules, ensuring scalability and seamless integration. Frontend designed with HTML5, CSS3 and Bootstrap.",
+    ],
+    tech: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Node JS",
+      "Express Js",
+      "ES6",
+      "MySQL",
+      "JQuery",
+    ],
   },
 ];
 
-const freelance = [
-  {
-    id: 4,
-    title: "Freelance Full Stack Developer",
-    company: "Self Employed",
-    tip: "Client-Focused Work",
-    startDate: "Jan 2023",
-    endDate: "Present",
-    location: "Remote",
-    description: [
-      "Worked with multiple clients to build full-stack web applications.",
-      "Built tools to automate client workflows, boosting efficiency.",
-    ],
-    tech: ["MERN Stack", "React", "Node.js", "MongoDB"],
-  },
-];
 
 const personalProjects = [
   {
@@ -82,22 +106,26 @@ const personalProjects = [
     src: youtube,
     githubLink: "https://github.com/0Rohit2022/TubeTweets",
     projectName: "TubeTweets",
-    tip: "Video Platform",
+    tip: "Video & Social Platform",
     description: [
-      "YouTube clone with integrated comment system and video upload built using React and Node.js.",
+      "Developed a YouTube-inspired video platform with Twitter-like tweet functionality, featuring secure video uploads and real-time commenting using Node.js and React.",
+      "Implemented user authentication, profile management, and channel subscriptions with JWT and MongoDB, integrated with Cloudinary for media storage.",
+      "Designed efficient REST APIs, achieving 30% faster response times through optimized database queries and caching.",
     ],
-    tech: ["React", "Node.js", "Express.js"],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Cloudinary", "JWT"],
   },
   {
     id: 7,
     src: tasktracker,
     githubLink: "https://github.com/0Rohit2022/Resume-Builder",
     projectName: "CVForge",
-    tip: "Resume Tool",
+    tip: "Resume Builder",
     description: [
-      "Resume builder platform with live preview using React, Redux, and Firebase.",
+      "Built a dynamic resume builder with real-time previews, enabling users to create professional resumes with customizable templates using React and Redux.",
+      "Integrated MongoDB with Node.js and Express.js for secure storage and retrieval of user data, ensuring seamless CRUD operations.",
+      "Optimized frontend performance by implementing lazy loading and state management, reducing load times by 25%.",
     ],
-    tech: ["React", "Redux", "Firebase"],
+    tech: ["React", "Redux", "Node.js", "Express.js", "MongoDB", "CSS"],
   },
   {
     id: 8,
@@ -106,9 +134,11 @@ const personalProjects = [
     projectName: "IdeaJET",
     tip: "Blog Platform",
     description: [
-      "Blog platform with role-based access, built on Spring Boot, Hibernate, MySQL.",
+      "Developed a feature-rich blogging platform with Spring Boot and Hibernate, supporting role-based authentication and real-time post interactions.",
+      "Implemented MySQL database with JDBC for efficient data management, enabling scalable post and comment systems.",
+      "Enhanced user experience with responsive design and RESTful APIs, achieving a 40% increase in user engagement.",
     ],
-    tech: ["Spring Boot", "Hibernate", "MySQL"],
+    tech: ["Spring Boot", "Hibernate", "MySQL", "JDBC", "Java"],
   },
   {
     id: 9,
@@ -117,9 +147,10 @@ const personalProjects = [
     projectName: "ChatZone",
     tip: "Real-Time Chat",
     description: [
-      "Real-time chat app using WebSockets and React.js with Node.js backend.",
+      "Created a real-time chat application using Java and WebSockets, supporting instant messaging and group chat functionalities.",
+      "Designed a scalable server architecture to handle concurrent users, ensuring low-latency communication with minimal resource usage."
     ],
-    tech: ["WebSockets", "React", "Node.js"],
+    tech: ["Java", "WebSockets", "Spring Boot"],
   },
 ];
 
@@ -200,73 +231,7 @@ const Experience = () => {
           )}
         </div>
 
-        {/* Freelance Section */}
-        <div className="py-8 text-center">
-          <h2 className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Freelance
-          </h2>
-        </div>
-
-        <div className="flex flex-col gap-8">
-          {freelance.map(
-            (
-              {
-                id,
-                title,
-                company,
-                tip,
-                startDate,
-                endDate,
-                location,
-                description,
-                tech,
-              },
-              index
-            ) => {
-              const cardRef = useRef(null);
-              const isVisible = useIntersectionObserver(cardRef);
-              return (
-                <div
-                  key={id}
-                  ref={cardRef}
-                  className={`relative bg-gray-900 rounded-xl p-6 shadow-lg shadow-gray-700 hover:shadow-xl transition-shadow duration-300 ${
-                    isVisible ? "animate-pop-up" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {tip && (
-                    <span className="absolute top-4 right-4 bg-cyan-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      {tip}
-                    </span>
-                  )}
-                  <h3 className="text-2xl font-bold text-white">{title}</h3>
-                  <p className="text-lg text-gray-300 mt-1">{company}</p>
-                  <p className="text-sm text-gray-400">
-                    {startDate} - {endDate} | {location}
-                  </p>
-                  <ul className="list-disc list-inside text-gray-300 mt-4 space-y-2">
-                    {description.map((item, index) => (
-                      <li key={index} className="text-base">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {tech.map((t, index) => (
-                      <span
-                        key={index}
-                        className="bg-gray-700 text-gray-200 text-sm px-3 py-1 rounded-full"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              );
-            }
-          )}
-        </div>
-
+        
         {/* Personal Projects Section */}
         <div className="py-8 text-center">
           <h2 className="text-4xl font-bold inline border-b-4 border-gray-500">
