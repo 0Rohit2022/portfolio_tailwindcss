@@ -15,7 +15,7 @@ const Contact = () => {
     const message = formData.get("message");
 
     const payload = {
-      to: ["rohit.k@t-a-g.co"], // Static recipient
+      to: ["rohitkumarrr2022@gmail.com"], // Static recipient
       subject: `Message from ${name}`,
       body: `
         <p><strong>Name:</strong> ${name}</p>
@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3002/Email/Send", {
+      const response = await fetch("https://dev_apigateway.lycee.in/api/Notification/SendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
