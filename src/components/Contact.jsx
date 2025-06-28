@@ -38,6 +38,7 @@ const Contact = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "X-Integration-Token": process.env.REACT_APP_INTEGRATION_TOKEN,
         },
         body: JSON.stringify(payload),
       });
